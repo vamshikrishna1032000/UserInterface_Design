@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recipe Share</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+function togglePdf(id) {
+  var pdfElement = document.getElementById(id);
+  pdfElement.style.display = pdfElement.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+  <style>
+        body {
+            background-color: rgba(116, 0, 0, 0.062);
+            background-image: url("https://quickstartcareer.com/wp-content/uploads/2021/07/cooking-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+
+        }
+        header {
+            text-align: center;
+            text-decoration: underline;
+            font-family: "Times New Roman", serif;
+
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            background-color: black;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Simple loading animation */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 3s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Add margin and styling for text sections */
+        main {
+            margin: 40px; /* Adjust margin as needed */
+            background-color: rgba(0, 0, 0, 0.3); /* Add a subtle background color */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 10px; /* Add rounded corners for a smoother finish */
+        }
+
+        li.prototype {
+            font-family: "Arial", sans-serif;
+            cursor:pointer;
+            font-size:20px;
+            padding-bottom:20px;
+            text-decoration: underline;
+        }
+
+        h2{
+        cursor:pointer;
+        }
+        p{
+        font-size:17px;
+        }
+        li{
+        font-size:17px;
+        padding-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+<div id="loading">
+  <img src="https://th.bing.com/th/id/R.cc0f2d417585c1572df8896c130958f8?rik=JgmsMeB%2bCoqzkg&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fA5ugHVbuFL3uo%2fgiphy.gif&ehk=Ic%2f2YZyRa1PJFzaka8e6WG3FwaiIaDl%2fzX9XhhuGW9A%3d&risl=&pid=ImgRaw&r=0" alt="Loading...">
+</div>
+
+<h1>Recipe Share</h1>
+
+</header>
+</main>
+
+
+
+
+<main>
+  <h2>Prototypes</h2>
+
+  <li class="prototype" onclick="togglePdf('edit')">Edit recipe task prototype</li>
+  <embed id="edit" src="prototype/task_edit_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+  <li class="prototype" onclick="togglePdf('login')">Login/Register task prototype </li>
+  <embed id="login" src="prototype/task_login_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+  <li class="prototype" onclick="togglePdf('search')">Search Recipe task prototype</li>
+  <embed id="search" src="prototype/task_search_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+  <li class="prototype" onclick="togglePdf('share')">Share Recipe task prototype</li>
+  <embed id="share" src="prototype/task_share_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+  <li class="prototype" onclick="togglePdf('upload')">Upload Recipe task prototype</li>
+  <embed id="upload" src="prototype/task_upload_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+  <li class="prototype" onclick="togglePdf('feedback')">Feedback and Rate Recipe task prototype</li>
+  <embed id="feedback" src="prototype/task_feedback_prototype.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+
+
+</main>
+
+
+<main>
+  <h2>Briefing</h2>
+  <p> ReceipeShare is for people who are passionate to cook and also for people who want to learn something new.
+    It allows you to search recipe easily with different filters. The platform not only provides comprehensive lists of ingredients, but also guides users through each step of the cooking process, ensuring a seamless experience. You can also upload your own recipe with just few simple steps and share it with your loved ones. Whether you're seeking inspiration or looking to inspire others, ReceipeShare is the ideal hub for all things culinary.</p>
+</main>
+
+
+<main>
+  <h2>Scenario Tasks</h2>
+  <li>To Upload a recipe</li>
+  <li>To Edit a recipe</li>
+  <li>To share a recipe</li>
+  </main>
+
+<main>
+  <h2>Observations</h2>
+  <ol>
+  <li>The user needed help understanding the signup and login functionalities. They had some issues with the login page, which is very simple to understand.
+  </li>
+  <li>Users seem to have little difficulty finding if the modified or uploaded recipe has been successfully altered or uploaded, as we didn’t show any pop that says successfully done.
+  </li>
+    <li>Users liked to see what time it would take to cook the recipe and wanted it to be mentioned along with the instructions.
+    </li>
+  </ol>
+</main>
+
+<main>
+  <h2>Prototype iteration</h2>
+  <ol>
+    <li>We have modified our login page to make it more user-friendly and based on the recommendations given by the users.</li>
+    <li>In the updated prototype, we added a pop-up that says ‘successful’ at the end of every successful task completion.</li>
+    <li>We added a new field called time taken and a filter feature where users can sort the recipe based on the cooking time.</li>
+  </ol>
+  <p></p>
+</main>
+
+
+
+
+
+
+
+
+
+
+<main>
+  <h3><a href="index.html">Home</a></h3>
+</main>
+
+<footer>
+  <p>&copy; 2023- Fall CS-615 project</p>
+</footer>
+</div>
+</body>
+</html>

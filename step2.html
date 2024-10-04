@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Recipe Share</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: rgba(116, 0, 0, 0.062);
+            background-image: url("https://quickstartcareer.com/wp-content/uploads/2021/07/cooking-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+
+        }
+        header {
+            text-align: center;
+            text-decoration: underline;
+            font-family: "Times New Roman", serif;
+
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            background-color: black;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Simple loading animation */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 3s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Add margin and styling for text sections */
+        main {
+            margin: 40px; /* Adjust margin as needed */
+            background-color: rgba(0, 0, 0, 0.3); /* Add a subtle background color */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 10px; /* Add rounded corners for a smoother finish */
+        }
+
+        h2 {
+            font-family: "Arial", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="loading">
+    <img src="https://th.bing.com/th/id/R.cc0f2d417585c1572df8896c130958f8?rik=JgmsMeB%2bCoqzkg&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fA5ugHVbuFL3uo%2fgiphy.gif&ehk=Ic%2f2YZyRa1PJFzaka8e6WG3FwaiIaDl%2fzX9XhhuGW9A%3d&risl=&pid=ImgRaw&r=0" alt="Loading...">
+</div>
+
+<h1>Recipe Share</h1>
+</header>
+</main>
+
+<main>
+    <h2>User Analysis</h2>
+    <p>For Mark, as a user, he wants to learn and explore different varieties of recipes. Through this practice, he also wants to gain his lost interest in cooking back. To gain his interest back, we need to make sure that the website reaches a wide section of the audience so that the website is engaged all the time so that the users can help each other out. And also the website must be designed in a creative way so that he will engage himself in this website.</p>
+
+    <img src="pngs/MarkPersona.png" height="500" alt="Hailey's Picture">
+
+    <p>For Hailey, as a user and also as a professional cook, she wants to share her recipes with other users and learn different recipes from the other users. Even for this, the website's engagement is very important and also reviewing the posted recipes by different users will also help them in improving their cooking styles. As Hailey participated as a judge in many competitions, review system in the website is also very important.</p>
+
+
+    <img src="pngs/HaileyPersona.png" height="500" alt="Mark's Picture">
+</main>
+
+
+<main>
+    <h2>Task Analysis</h2>
+    <h3>Task 1: Register or Login to the website</h3>
+    <p>Goal: The user wants to register or login to access their account</p>
+    <ol type="i">
+        <li>Enter Email Address.</li>
+        <li>Enter Name.</li>
+        <li>Enter Password.</li>
+        <li>Click on register/login button.</li>
+    </ol>
+
+    <h3>Task 2: Search for a Recipe</h3>
+    <p>Goal: The user wants to find a specific recipe or explore recipes based on certain criteria.</p>
+    <ol type="i">
+        <li>Navigate to the RecipeSearch page.</li>
+        <li>Enter search criteria.
+            <ol type="a">
+                <li>Type keywords, ingredients, cuisine, dietary restrictions, or cooking time in the search bar.</li>
+                <li>Apply filters (e.g. vegetarian, gluten-free, under 30 minutes, breakfast, lunch, dinner) if desired.</li>
+            </ol>
+        </li>
+        <li>Browse search results.</li>
+        <li>View recipe details.</li>
+        <li>Save or bookmark a recipe.</li>
+    </ol>
+
+    <h3>Task 3: Upload a Recipe</h3>
+    <p>Goal: The user wants to share a recipe with the RecipeShare community.</p>
+    <ol type="i">
+        <li>Create a new recipe.
+            <ol type="a">
+                <li>Navigate to the user's profile.</li>
+                <li>Click on "Create New Recipe".</li>
+            </ol>
+        </li>
+        <li>Fill in recipe details.
+            <ol type="a">
+                <li>Enter a title, list of ingredients, and step-by-step instructions.</li>
+                <li>Provide additional information like cooking time, difficulty level, and dietary tags.</li>
+            </ol>
+        </li>
+        <li>Add a photo (optional).</li>
+        <li>Preview the recipe.</li>
+        <li>Publish the recipe.</li>
+    </ol>
+
+    <h3>Task 4: Modify a Recipe</h3>
+    <p>Goal: The user wants to modify a recipe to suit their preferences or dietary restrictions.</p>
+    <ol type="i">
+        <li>Access saved recipes.
+            <ol type="a">
+                <li>Navigate to the user's profile.</li>
+                <li>Click on "Saved Recipes".</li>
+            </ol>
+        </li>
+        <li>Select a recipe to edit.</li>
+        <li>Make changes to the recipe.</li>
+        <li>Save the modified recipe.</li>
+    </ol>
+
+    <h3>Task 5: Sharing a Recipe</h3>
+    <p>Goal: The user wants to share a recipe on any social media platform.</p>
+    <ol type="i">
+        <li>Click on share button.</li>
+        <li>Select the social media platform (e.g. Instagram, Facebook, Whatsapp).</li>
+    </ol>
+
+    <h3>Task 6: Providing rating and feedback to recipes</h3>
+    <p>Goal: The user wants to give ratings, feedback or ask questions about a specific recipe.</p>
+    <ol type="i">
+        <li>Locate the recipe to provide feedback</li>
+        <li>Give rating from 5 stars</li>
+        <li>Access the comments section</li>
+        <li>Write a comment or question</li>
+        <li>Submit the comment</li>
+    </ol>
+</main>
+
+
+<main>
+    <h2>Domain Analysis</h2>
+    <img src="pngs/DomainAnalysis.jpeg" height="500"  alt="Domain Analysis Picture">
+</main>
+
+
+<main>
+    <h2><a href="index.html">Home</a></h2>
+</main>
+
+<footer>
+    <p>&copy; 2023- Fall CS-615 project</p>
+</footer>
+</div>
+</body>
+</html>

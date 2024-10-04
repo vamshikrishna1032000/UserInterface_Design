@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recipe Share</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+function togglePdf(id) {
+  var pdfElement = document.getElementById(id + 'Pdf');
+  pdfElement.style.display = pdfElement.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+  <style>
+        body {
+            background-color: rgba(116, 0, 0, 0.062);
+            background-image: url("https://quickstartcareer.com/wp-content/uploads/2021/07/cooking-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+
+        }
+        header {
+            text-align: center;
+            text-decoration: underline;
+            font-family: "Times New Roman", serif;
+
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            background-color: black;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Simple loading animation */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 3s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Add margin and styling for text sections */
+        main {
+            margin: 40px; /* Adjust margin as needed */
+            background-color: rgba(0, 0, 0, 0.3); /* Add a subtle background color */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 10px; /* Add rounded corners for a smoother finish */
+        }
+
+        h3 {
+            font-family: "Arial", sans-serif;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="loading">
+  <img src="https://th.bing.com/th/id/R.cc0f2d417585c1572df8896c130958f8?rik=JgmsMeB%2bCoqzkg&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fA5ugHVbuFL3uo%2fgiphy.gif&ehk=Ic%2f2YZyRa1PJFzaka8e6WG3FwaiIaDl%2fzX9XhhuGW9A%3d&risl=&pid=ImgRaw&r=0" alt="Loading...">
+</div>
+
+<h1>Recipe Share</h1>
+
+</header>
+</main>
+
+
+
+
+<main>
+  <h3 onclick="togglePdf('sruthi')">Storyboard Sruthi Damera</h3>
+  <embed id="sruthiPdf" src="user-story/Sruthi_user_story.pdf" type="application/pdf" width="100%" height="750px" style="display: none;" />
+</main>
+
+<main>
+  <h3 onclick="togglePdf('deepthi')">Storyboard Sai Deepthi Maganti</h3>
+  <embed id="deepthiPdf" src="user-story/Deepthi_user_story.pdf" type="application/pdf" width="100%" height="750px" style="display: none; " />
+</main>
+
+<main>
+  <h3 onclick="togglePdf('harshith')">Storyboard Sai Harshith Chinta</h3>
+  <embed id="harshithPdf" src="user-story/Harshith_user_story.pdf" type="application/pdf" width="100%" height="750px" style="display: none; " />
+</main>
+<main>
+  <h3 onclick="togglePdf('kumar')">Storyboard Sai Kumar Agam</h3>
+  <embed id="kumarPdf" src="user-story/Kumar_user_story.pdf" type="application/pdf" width="100%" height="750px" style="display: none; " />
+</main>
+
+<main>
+  <h3 onclick="togglePdf('nandani')">Storyboard Nandani Mavani</h3>
+  <embed id="nandaniPdf" src="user-story/Nandani_user_story.pdf" type="application/pdf" width="100%" height="750px" style="display: none; " />
+</main>
+
+<main>
+  <h3 onclick="togglePdf('final')" >Final sketches</h3>
+  <div id="finalPdf" style="display: none; ">
+    <h3>Task-1 : Register or Login to the website</h3>
+    <img src="user-story/task1_register.jpeg" height="500"/>
+    <img src="user-story/task1_login.png" height="500"/>
+    <br/><br/>
+    <div>We chose this because, in the user authentication page, it provides two options for signing up. Users can either log in using their social media profiles or use the normal signup page, which requires a username and password. Finally, there is a login button for existing users.</div>
+    <br/>
+    <h3>Task 2: Search for a Recipe</h3>
+    <img src="user-story/task2_search.jpeg" height="500"/>
+    <br/><br/>
+    <div>We chose this storyboard for task 2 as it depicts the user’s emotional state and device in the diagram. It also shows detail overview of the website showing different filter availble for the users to choose from.</div>
+    <br/>
+    <h3>Task 3: Upload a Recipe</h3>
+    <img src="user-story/task3_upload.jpeg" height="500"/>
+    <br/><br/>
+    <div>We chose this design as it shows clear picture of the website and also the emotional state of the user who is happy to upload the recipe.</div>
+    <br/>
+    <h3>Task 4: Modify a Recipe</h3>
+    <img src="user-story/task4_modify.png" height="750"/>
+    <br/><br/>
+    <div>
+    The design effectively outlines the scenario, goal, and user persona. It showcases the main options on the home page, including "Upload Recipe," "Saved Recipes," and "My Recipes." It provides clear guidance on where the user should navigate to make modifications to their designs. Given the clarity in the user's task flow within this design, it was our preferred choice among all the options.
+    </div>
+
+    <br/>
+    <h3>Task 5: Sharing a Recipe</h3>
+    <img src="user-story/task5_share.png" height="500"/>
+    <br/><br/>
+    <div>
+      The design provides a comprehensive portrayal of the scenario, outlining the goal and introducing the user persona. It illustrates the options available for a specific recipe, offering users many choices. Additionally, there is a prominently featured share button that, upon clicking, offers a selection of platforms. This intuitive feature ensures that users can effortlessly share the content across various social media platforms. Given the clarity with which this design explains the user's task process, it stood out as the preferred choice among all the options presented. </div>
+    <br/>
+    <h3>Task 6: Providing rating and feedback to recipes</h3>
+    <img src="user-story/task6_feedback.jpeg" height="250"/>
+    <br/><br/>
+    <div>We choose this because it allows 2 types of rating  which is rating by stars and a comment box where user can express his review there</div>
+    <br/>
+
+  </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+<main>
+  <h2><a href="index.html">Home</a></h2>
+</main>
+
+<footer>
+  <p>&copy; 2023- Fall CS-615 project</p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Recipe Share</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        body {
+            background-color: rgba(116, 0, 0, 0.062);
+            background-image: url("https://quickstartcareer.com/wp-content/uploads/2021/07/cooking-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+
+        }
+        header {
+            text-align: center;
+            text-decoration: underline;
+            font-family: "Times New Roman", serif;
+
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            background-color: black;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Simple loading animation */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 3s forwards;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        #loading img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Add margin and styling for text sections */
+        main {
+            margin: 20px; /* Adjust margin as needed */
+            background-color: rgba(0, 0, 0, 0.3); /* Add a subtle background color */
+            padding: 20px; /* Add padding for spacing */
+            border-radius: 10px; /* Add rounded corners for a smoother finish */
+        }
+
+        h2 {
+            font-family: "Arial", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="loading">
+  <img src="https://th.bing.com/th/id/R.cc0f2d417585c1572df8896c130958f8?rik=JgmsMeB%2bCoqzkg&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fA5ugHVbuFL3uo%2fgiphy.gif&ehk=Ic%2f2YZyRa1PJFzaka8e6WG3FwaiIaDl%2fzX9XhhuGW9A%3d&risl=&pid=ImgRaw&r=0" alt="Loading...">
+</div>
+
+<h1>Recipe Share</h1>
+</header>
+<main>
+  <h2>A link to implementation</h2>
+  <a target="_blank" href="https://raw.githack.com/SruthiDamera23/RecipeShare/main/welcome.html">Click on this for implementation</a>
+<a target="_blank" href="https://github.com/SruthiDamera23/RecipeShare">Click on this for implementation github repo</a>
+
+</main>
+<main>
+  <h2>instructions to run it</h2>
+  <p>
+    <li>Firstly, you can see the welcome page and click on signup.</li>
+    <li>If you already have an account, you can log in by clicking on login.</li>
+    <li>You will be navigated to the home page, where you have multiple options on the left sidebar.</li>
+    <li>If you want to log out at any point, you can click on logout at the top right.</li>
+    <li>If you want to know about the app at any point, you can click on About Us at the top right.</li>
+    <li>My Recipes on the left have the recipes uploaded by the user. Each recipe in My Recipes can be edited by clicking on the edit icon.</li>
+    <li>You can upload a new recipe by clicking on Upload on the left.</li>
+    <li>Saved and Favorites on the left consist of the favorited and saved recipes of the user.</li>
+    <li>By clicking on any recipe from Saved, Favorites, and My Recipes, you can further see the recipe details, on which you can comment, favorite, save, and share.</li>
+    <li>On the home page, there is a search bar at the top, in which you can write your queries, apply filters, and search. You will get results according to that.</li>
+    
+    </p>
+</main>
+<main>
+    <h2>Implementation Video</h2>
+    <video width="640" height="360" controls>
+        <source src="implementation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </main>
+<main>
+  <h2><a href="index.html">Home</a></h2>
+</main>
+
+<footer>
+  <p>&copy; 2023- Fall CS-615 project</p>
+</footer>
+</div>
+</body>
+</html>
